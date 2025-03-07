@@ -39,7 +39,7 @@ export const ColorPickerButton: React.FC<ColorPickerButtonProps> = ({
         <span className="text-foreground">{text}</span>
       </button>
       {isOpen && (
-        <div className="absolute left-0 mt-2 p-2 bg-card rounded-lg">
+        <div className="z-10 absolute left-0 mt-2 p-2 bg-card rounded-lg">
           <HexColorPicker color={color} onChange={setColor} />
         </div>
       )}
